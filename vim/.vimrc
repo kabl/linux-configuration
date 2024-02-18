@@ -46,14 +46,14 @@ set guifont=Hack\ Nerd\ Font\ Regular\ 12
 set antialias
 
 " Disable Arrow Keys
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
+" map <up> <nop>
+" map <down> <nop>
+" map <left> <nop>
+" map <right> <nop>
+" imap <up> <nop>
+" imap <down> <nop>
+" imap <left> <nop>
+" imap <right> <nop>
 
 imap ` <Esc>
 
@@ -75,6 +75,9 @@ map <leader>\| : vnew <CR>
 set tabstop=4
 set expandtab
 set shiftwidth=4
+
+" always show status bar
+set ls=2
 
 " requires xmllint. install: apt -y install libxml2-utils
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
